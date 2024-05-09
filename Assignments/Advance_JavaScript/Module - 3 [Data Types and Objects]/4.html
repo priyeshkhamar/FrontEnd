@@ -1,0 +1,95 @@
+<!-- Create a form and validate using JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        input {
+            padding: 10px;
+            margin: 5px;
+            font-size: large;
+            outline: auto;
+        }
+
+        span {
+            font-size: 20px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" onsubmit="return validation()">
+        <input type="text" id="name" placeholder="Enter Your Name" />
+        <span id="namespan"></span>
+        <br>
+
+        <input type="password" id="password" placeholder="Enter Password" />
+        <span id="pwdspan"></span>
+        <br>
+
+        <input type="password" id="confpassword" placeholder="Confirm Password" />
+        <span id="confpwdspan"></span>
+        <br>
+
+        <input type="tel" id="mobile" placeholder="Enter Mobile Number" />
+        <span id="mobilespan"></span>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        var name1 = document.getElementById("name");
+        var nameerr = document.getElementById("namespan");
+
+        var pwd = document.getElementById("password");
+        var pwderr = document.getElementById("pwdspan");
+
+        var cpwd = document.getElementById("confpassword");
+        var cpwderr = document.getElementById("confpwdspan");
+
+        var phone = document.getElementById("mobile");
+        var phoneerr = document.getElementById("mobilespan");
+
+        function validation() {
+            if (name1.value == null || name1.value == "") {
+                nameerr.innerHTML = "Name is Required!";
+                nameerr.style.color = "white";
+                return false;
+            } else {
+                nameerr.innerHTML = "";
+            }
+
+            if (pwd.value == null || pwd.value == "") {
+                pwderr.innerHTML = "Password is Required!";
+                pwderr.style.color = "white";
+                return false;
+            } else {
+                pwderr.innerHTML = "";
+            }
+
+            if (cpwd.value === null || cpwd.value === "") {
+                cpwderr.innerHTML = "Confirm Password is Required!";
+                cpwderr.style.color = "white";
+                return false;
+            } else {
+                cpwderr.innerHTML = "";
+            }
+
+            if (phone.value === null || phone.value === "") {
+                phoneerr.innerHTML = "Mobile Number is Required!";
+                phoneerr.style.color = "white";
+                return false;
+            } else {
+                phoneerr.innerHTML = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

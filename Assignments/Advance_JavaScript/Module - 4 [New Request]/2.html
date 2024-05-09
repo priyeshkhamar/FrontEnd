@@ -1,0 +1,58 @@
+<!-- What is promises? -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        A JavaScript promise is an object that reflects the eventual success or failure of an asynchronous action.<br>
+        It is
+        a method of handling asynchronous actions in a more structured and understandable manner.<br><br>
+        <li>Promises exist in three states:</li>
+        <li>Pending : The initial condition, in which neither fulfillment nor rejection occurs.</li>
+        <li> Fulfilled : means that the operation was completed successfully.</li>
+        <li>Rejected : indicates that the operation failed.</li>
+        <br>
+        When a promise is created, it is in the pending status. When the asynchronous action finishes, the promise is
+        either fulfilled or denied.
+        <br>
+        If the operation is successful, the promise is fulfilled, and the outcome is provided to the promise's then()
+        callback.
+        <br>
+        If the operation fails, the promise is denied, and the cause of the failure is sent to the promise's catch()
+        function.
+        <br><br>
+        
+        Example :
+    </p>
+    <script>
+
+        function display(x) {
+            console.log(x);
+        }
+
+        const myPromise = new Promise(function (res, err) {
+            res = "Success!";
+            err = "Error!";
+            if (res) {
+                console.log(res);
+            }
+            else {
+                console.log(err);
+            }
+        })
+        myPromise.then(
+            function (resp) { display(resp) },
+            function (resp) { display(resp) }
+        );
+    </script>
+
+</body>
+
+</html>

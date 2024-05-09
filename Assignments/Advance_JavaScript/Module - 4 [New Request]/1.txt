@@ -1,0 +1,19 @@
+Q - 1. What is JSON?
+Ans.
+
+- JSON stands for Javascript Object Notation.
+ - It is a lightweight data-interchange format. 
+- It is easy for humans to read and write. 
+- It is easy for machines to parse and generate. 
+- It is based on JavaScript Object Notation.
+- JSON is a language-independent data formatand it is used to store and transmit data between programs written in different languages. - It is often used to send data from a server to a web page.
+- It uses curly braces to denote objects, square brackets to denote arrays, and colons to separate keys from values. 
+- JSON data can be easily converted to and from JavaScript objects.
+
+Example - 
+
+{
+  "name": "John Doe",
+  "age": 30,
+  "occupation": "Software Engineer"
+}

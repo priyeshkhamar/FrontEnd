@@ -1,0 +1,29 @@
+<!-- Create a program that will select all the classes and loop over and whenever i click the button the alert should show -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alert on Button Click</title>
+</head>
+
+<body>
+
+    <button class="clickTheButton">Click me 1</button>
+    <button class="clickTheButton">Click me 2</button>
+    <button class="clickTheButton">Click me 3</button>
+
+    <script>
+        const buttons = document.getElementsByClassName("clickTheButton");
+
+        for (const button of buttons) {
+            button.addEventListener("click", alertMessage);
+        }
+
+        function alertMessage() {
+            alert("You have clicked the button");
+        }
+    </script>
+</body>
+
+</html>

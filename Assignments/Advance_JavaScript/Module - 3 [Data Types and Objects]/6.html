@@ -1,0 +1,47 @@
+<!-- Use external js library to show slider -->
+<!-- Slick Slider -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standalone Slider</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <style>
+        .slider {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        .slider img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slider">
+        <div><img src="https://via.placeholder.com/600x300?text=Slide+1" alt="Slide 1"></div>
+        <div><img src="https://via.placeholder.com/600x300?text=Slide+2" alt="Slide 2"></div>
+        <div><img src="https://via.placeholder.com/600x300?text=Slide+3" alt="Slide 3"></div>
+    </div>
+    <span style="margin-left: 150px;">Note : Drag the slide to change</span>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick();
+        });
+    </script>
+
+</body>
+
+</html>

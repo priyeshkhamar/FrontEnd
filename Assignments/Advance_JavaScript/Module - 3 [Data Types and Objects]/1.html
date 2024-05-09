@@ -1,0 +1,36 @@
+<!-- Create a program to hide/show the password -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="Password : ">Password : </label>
+    <input type="password" name="" id="pwdinput">
+    <input type="checkbox" name="" id="showpwd" onclick="showHidePassword()">Show Password
+
+    <script>
+        function showHidePassword() {
+            var password = document.getElementById("pwdinput");
+            if (password.type === "password") {
+                password.type = "text";
+            }
+            else {
+                password.type = "password";
+            }
+        }
+    </script>
+</body>
+
+</html>

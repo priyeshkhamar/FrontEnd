@@ -1,0 +1,36 @@
+<!-- Write a program of promises and handle that promises also -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function display(x) {
+            console.log(x);
+        }
+
+        const myPromise = new Promise(function (res, err) {
+            res = "Success!";
+            err = "Error!";
+            if (res) {
+                document.write(res);
+            }
+            else {
+                document.write(err);
+            }
+        })
+        myPromise.then(
+            function (resp) { display(resp) },
+            function (resp) { display(resp) }
+        );
+    </script>
+</body>
+
+</html>
