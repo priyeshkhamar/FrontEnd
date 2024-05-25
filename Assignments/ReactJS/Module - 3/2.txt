@@ -1,0 +1,19 @@
+Q - 2. What is NPM in React JS?
+-->
+- NPM stands for Node Package Manager.
+- NPM (Node Package Manager) in React.js serves several important functions:
+
+1. Package Management: 
+NPM allows us to easily install, update, and manage third-party libraries and dependencies needed for React projects.
+Ex - npm install react-router-dom
+
+2. Version Control: 
+NPM helps manage the versions of the packages you use, ensuring compatibility and stability in your project. 
+
+3. Script Running: 
+We can define and run custom scripts through NPM, such as starting the development server, building the project, or running tests.
+Ex - npm start
+
+4. Project Initialization: 
+NPM can be used to initialize new projects quickly, such as using Create React App to set up a new React application.   
+Ex - npx create-react-app my-app

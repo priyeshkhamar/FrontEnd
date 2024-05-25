@@ -1,0 +1,17 @@
+Q - 5. What is Components in React Js?
+-->
+- A Component is considered as the core building blocks of a React application. 
+It makes the task of building UIs much easier. Each component exists in the same space, but they work independently from one another and merge all in a parent component, which will be the final UI of your application.
+
+Components are of two types : 
+
+1. Functional Components 
+- Functional components allow us to build components with simply a render function and no state. 
+- They are simple JavaScript functions that may or may not accept data as arguments. 
+- We may define a function that accepts props (properties) as input and returns what should be presented.
+
+2. Class components 
+- Class Components are more complex than functional components. 
+- It requires you to extend from React.Component and create a render function which returns a React element. 
+- You can pass data from one class to other class components. 
+- You can create a class by defining a class that extends Component and has a render function.

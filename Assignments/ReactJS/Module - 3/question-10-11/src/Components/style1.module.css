@@ -1,0 +1,43 @@
+.incDecMain {
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  background-color: blue;
+  padding: 238px 200px;
+}
+
+.heading{
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.counter {
+  font-size: 25px;
+  color: black;
+  font-weight: 600;
+}
+
+.action {
+  margin: 10px;
+  font-size: large;
+  font-weight: 600;
+}
+
+.list{
+  list-style:decimal;
+  background-color: greenyellow;
+  padding: 100px 100px;
+}
+
+.listItems{
+background-color: whitesmoke;
+margin: 10px;
+padding: 5px;
+}
+
+.listHead{
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}

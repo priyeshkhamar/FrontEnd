@@ -1,0 +1,10 @@
+Q - 8. How to check version of React Js?
+-->
+
+- There are two ways to check version of React js in our project :
+
+1. Using Package.json file 
+-- The package.json file contains a lot of information in the name/value pairs in JSON format. We can easily check our React version under the list of dependencies.
+
+2. Using Command
+-- We can check by using the CLI command - 'npm view react version'.

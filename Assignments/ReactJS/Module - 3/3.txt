@@ -1,0 +1,11 @@
+Q - 3. What is the role of Node Js in React Js?
+-->
+
+
+- Node.js plays a crucial role in React.js development by providing:
+
+1. Development Environment: Runs tools like Webpack and Babel.
+2. Package Management: Uses NPM to install and manage dependencies.
+3. Server-Side Rendering (SSR): Enables SSR with frameworks like Next.js.
+
+To summarize, Node.js is essential for the setup, development, and build processes in React projects.

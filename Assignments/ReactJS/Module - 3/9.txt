@@ -1,0 +1,5 @@
+Q - 9. How to change in Components in React Js?
+-->
+- React components are usually defined in .js or .jsx files.
+- To make changes to a component, open the component file, then make chnages to the file as required and save the file.
+- Once changes are done, we can view the changes in the browser.

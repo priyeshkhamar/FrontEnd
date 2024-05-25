@@ -1,0 +1,13 @@
+Q - 4. What is CLI command in React Js?
+-->
+
+- In React.js, CLI (Command Line Interface) commands are used for various development tasks. 
+Common commands include:
+
+1. Create a New Project: npx create-react-app my-app
+2. Start Development Server: npm start
+3. Build for Production: npm run build
+4. Run Tests: npm test
+5. Eject Configuration: npm run eject
+
+These commands streamline setup, development, and build processes in React projects.

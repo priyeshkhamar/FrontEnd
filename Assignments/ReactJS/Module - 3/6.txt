@@ -1,0 +1,18 @@
+Q - 6. What is Header and Content Component in React Js?
+--> 
+
+1. Header Component
+- A Header component is a React component that typically renders the top part of a web page or application. 
+- This includes elements such as:
+
+a. The website or application logo
+b. Navigation links (menu items)
+c. A search bar
+d. User profile and login/logout buttons
+
+- The Header component provides navigation across different pages of the application.
+
+2. Content Component
+- A Content component is a React component that renders the main content area of a web page or application. 
+- This part of the UI changes as the user navigates through different sections or pages of the app. 
+- It can include various types of content depending on the route or state of the application, such as sections, product - description and images, forms, etc.
