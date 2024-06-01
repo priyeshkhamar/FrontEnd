@@ -9,9 +9,9 @@ const ListView = (props) => {
 
   return (
     <>
-      
+
       <ul className={styles.list}>
-      <h2 className={styles.listHead}>The "React Way" to Render a List</h2>
+        <h2 className={styles.listHead}>The "React Way" to Render a List</h2>
         {datalist}
       </ul>
     </>
