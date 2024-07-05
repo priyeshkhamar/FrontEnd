@@ -1,35 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+/* eslint-disable react/jsx-key */
 import './App.css'
+import Accordion from './Components/Accordian';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const accordionItems = [
+    { title: 'What is your Return Policy?', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, debitis ducimus dolorem perspiciatis eum cupiditate vitae autem eos odio quaerat!' },
+    { title: 'How can we track our order?', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatum ratione illo nihil suscipit iste inventore harum officiis consequatur in odio officia, ipsa voluptates nostrum pariatur vitae, ab facilis id fugiat debitis animi, quisquam temporibus ullam enim! Ex, pariatur iusto?' },
+    { title: 'Can I purchase items again?', content: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, dolores.' }
+  ];
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="App">
+      <h1>React Accordion</h1>
+      <Accordion items={accordionItems} />
+    </div>
+  );
 }
 
-export default App
+export default App;
