@@ -10,5 +10,4 @@ const Accordion = ({ items }) => {
         </div>
     );
 };
-
 export default Accordion;
