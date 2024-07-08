@@ -1,0 +1,4 @@
+Q - 4. What is the second argument that can optionally be passed tosetState and what is its purpose?
+
+Ans.
+

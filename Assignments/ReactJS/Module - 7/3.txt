@@ -1,0 +1,4 @@
+Q - 3. What is Pure Component? When to use Pure Component over Component?
+
+Ans.
+
