@@ -1,4 +1,9 @@
 Q - 4. What is the second argument that can optionally be passed tosetState and what is its purpose?
 
 Ans.
+The second argument that can optionally be passed to 'setState' in React is a callback function. This callback function is executed after the setState operation has been completed and the component has re-rendered.
 
+Ex - 
+this.setState({ key1: value1, key2: value2 }, () => {
+  console.log('State has been updated:', this.state);
+});

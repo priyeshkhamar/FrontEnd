@@ -1,4 +1,15 @@
 Q - 3. What is Pure Component? When to use Pure Component over Component?
 
 Ans.
+Pure components in React are a type of component that only re-renders when its props or state change. 
+They are also referred to as “stateless components” or “dumb components”. 
+Pure components are a way to optimize the performance of your React application by reducing unnecessary re-renders.
 
+The React.PureComponent class is responsible for creating pure components. 
+It shares similarities with the React.Component class, but it goes a step further by implementing a shouldComponentUpdate() method. 
+This method automatically verifies whether there have been any changes in the component’s props or state before triggering a re-render. 
+If no changes are detected, the component remains unchanged, leading to enhanced performance.
+
+We can use Pure Component over Regular Components in the following cases : 
+1. When your component frequently re-renders with the same props and state.
+2. When You use immutable data structures, ensuring that changes result in new object references.
